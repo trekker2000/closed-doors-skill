@@ -7,7 +7,8 @@ class ClosedDoors(MycroftSkill):
 
     @intent_file_handler('doors.closed.intent')
     def handle_doors_closed(self, message):
-        self.speak_dialog('doors.closed')
+        self.speak_dialog('doors.garage.open.dialog')
+        self.speak_dialog('doors.shop.garage.open.dialog')
 
 
 def create_skill():
